@@ -12,7 +12,7 @@ body{
     display: grid;
     grid-template-columns: 296px auto;
     grid-template-rows: 80px 1fr;
-    gap: 20px;
+    gap: 24px;
     min-height: 100vh;
 }
 ul,li,a{
@@ -126,12 +126,12 @@ button{
 
 .logo__block{
     display: flex;
-    padding: 24px 10px 24px 15px;
+    padding: 24px 10px 24px 10px;
     align-items: center;
 }
 
 .logo{
-    margin-right: 40px;
+    margin-right: 47px;
 }
 
 .asidemenu__item{
@@ -168,20 +168,24 @@ button{
     font-size: 15px;
 }
 
+/* -------------- Главная информация -------------- */
+
 .main{
     grid-column: 2 / span 1;
-
 }
 
 .main__info{
-    padding: 30px;
+    display: flex;
     border: 1px solid #fff;
     background-color: #fff;
     border-radius: 20px;
-    width: 100%;
+    width: 100%-30px;
+    padding: 30px 0 30px 30px;
 }
 
-/* -------------- Главная информация -------------- */
+.main__blocks{
+margin-right: 160px;
+}
 
 .main__title-block{
     display: flex;
@@ -227,6 +231,10 @@ button{
 }
 
 .input__block--three{
+    width: 583px;
+}
+
+.input__block--four{
     width: 879px;
 }
 
@@ -234,10 +242,16 @@ button{
     background: transparent url('../Image/docx.svg') no-repeat center / contain;
     width: 24px;
     height: 24px;
-    margin: 0 20px;
+    padding: 0 20px;
+}
+
+.input__image--adress{
+    background: transparent url('../Image/myCompany.svg') no-repeat center / contain;
+
 }
 
 .input__field{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -245,7 +259,7 @@ button{
     padding-left: 20px; 
 }
 
-.input{
+.input, .select{
     border: none;
     background-color: #F5F7FB;
     color: #333333;
@@ -253,7 +267,16 @@ button{
     font-weight: 600;
 }
 
-.input:focus {
+.select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding-right: 35px;
+
+}
+
+.input:focus, .select:focus {
     outline: none;
     border: none;
 }
@@ -261,6 +284,7 @@ button{
 .input__label {
     color: #88969D;
     font-size: 14px;
+    
 }
 
 .inputs{
@@ -268,7 +292,63 @@ button{
     display: flex;
     width: 879px;
     flex-wrap: wrap;
+    
 }
+
+.select__field{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.select-arrow {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 24px;
+    height: 24px;
+    background: transparent url('../Image/select.svg') no-repeat center / contain;
+}
+
+.info__div{
+    margin-top: 35px;
+    width: 477px;
+    display: flex;
+    float: right;
+}
+.info__img{
+    background: transparent url('../Image/info.svg') no-repeat center / contain;
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    margin-right: 15px;
+}
+
+.info__text{
+    line-height: 22px;
+    width: 438px;
+    color: #88969D;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.info__paragraph{
+    margin: 0 0 10px 0;
+}
+
+.inputs__div{
+    margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
 
 
 
