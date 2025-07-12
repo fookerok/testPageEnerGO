@@ -150,127 +150,239 @@
 				<h3 class="main__title">Добавление сотрудника</h3>
 			</div>
 			<div class="main__info">
-				<div class="main__blocks">
-					<div class="inputs__div">
-						<h4 class="div-title">Имя сотрудника</h4>
-						<div class="inputs">
-							<div class="input__block input__block--one">
-								<div class="input__image"></div>
-								<div class="input__field">
-									<label class="input__label">Имя</label>
-									<input class="input" type="text" value="Василиса">
+				<section class="item__section">
+					<div class="main__blocks">
+						<div class="inputs__div">
+							<h4 class="div-title">Имя сотрудника</h4>
+							<div class="inputs">
+								<div class="input__block input__block--one">
+									<div class="input__image"></div>
+									<div class="input__field">
+										<label class="input__label">Имя</label>
+										<input class="input" type="text" value="Василиса">
+									</div>
 								</div>
-							</div>
-							<div class="input__block input__block--one">
-								<div class="input__image"></div>
-								<div class="input__field">
-									<label class="input__label">Отчество</label>
-									<input class="input" type="text" value="Константиновна">
+								<div class="input__block input__block--one">
+									<div class="input__image"></div>
+									<div class="input__field">
+										<label class="input__label">Отчество</label>
+										<input class="input" type="text" value="Константиновна">
+									</div>
 								</div>
-							</div>
-							<div class="input__block input__block--one">
-								<div class="input__image"></div>
-								<div class="input__field">
-									<label class="input__label">Фамилия</label>
-									<input class="input" type="text" value="Крыжовникова">
+								<div class="input__block input__block--one">
+									<div class="input__image"></div>
+									<div class="input__field">
+										<label class="input__label">Фамилия</label>
+										<input class="input" type="text" value="Крыжовникова">
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="inputs__div">
-						<h4 class="div-title">Компания</h4>
-						<div class="inputs">
-							<div class="input__block input__block--four">
-								<div class="input__image input__image--company"></div>
-								<div class="input__field">
-										<label class="input__label">Название компании</label>
-										<div class="select__field">
-										<select class="select">
-											<option value="ooo-novye-tehnologii">ООО «Новые технологии»</option>
-										</select>
-										<span class="select-arrow"></span>
+						<div class="inputs__div">
+							<h4 class="div-title">Компания</h4>
+							<div class="inputs">
+								<div class="input__block input__block--four">
+									<div class="input__image  input__image--company"></div>
+									<div class="input__field">
+											<label class="input__label">Название компании</label>
+											<div class="select__field">
+											<select class="select">
+												<option value="ooo-novye-tehnologii">ООО «Новые технологии»</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+								</div>
+								<div class="input__block input__block--two">
+									<div class="input__image input__image--company"></div>
+									<div class="input__field">
+										<label class="input__label">Название должности</label>
+										<input class="input job" type="text" value="Начальник отдела">
+									</div>
+								</div>
+								<div class="input__block input__block--two">
+									<div class="input__image input__image--company"></div>
+									<div class="input__field">
+											<label class="input__label">Название отдела</label>
+											<div class="select__field">
+											<select class="select">
+												<option value="ooo-novye-tehnologii">Отдел информационного развития</option>
+											</select>
+											<span class="select-arrow"></span>
+										</div>
+									</div>
+								</div>
+								<button class="btn-add">
+								<span class="btn-img"></span>
+									Добавить
+								</button>
+							</div>
+							<div class="cards-container"></div>
+						</div>
+						<div class="inputs__div">
+							<h4 class="div-title">Паспорт</h4>
+							<div class="inputs">
+								<div class="input__block input__block--one">
+									<div class="input__image"></div>
+									<div class="input__field">
+										<label class="input__label">Серия паспорта</label>
+										<input class="input" type="text" value="2356">
+									</div>
+								</div>
+								<div class="input__block input__block--three">
+									<div class="input__image"></div>
+									<div class="input__field">
+										<label class="input__label">Номер паспорта</label>
+										<input class="input" type="text" value="563985">
+									</div>
+								</div>
+								<div class="input__block input__block--three">
+									<div class="input__image"></div>
+									<div class="input__field">
+										<label class="input__label">Кем выдан</label>
+										<input class="input" type="text" value="Коломенским УВД МО">
+									</div>
+								</div>
+								<div class="input__block input__block--one">
+									<div class="input__image input__image--calendar"></div>
+									<div class="input__field">
+										<label class="input__label">Когда выдан</label>
+										<input class="input input--date" id="date" type="date" value="12/11/2022">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="inputs__div">
+							<h4 class="div-title">Контактные данные</h4>
+							<div class="inputs">
+								<div class="input__block input__block--four">
+									<div class="input__image input__image--adress"></div>
+									<div class="input__field">
+										<label class="input__label">Адрес регистрации</label>
+										<input class="input" type="text" value="г. Москва, Инженерная улица, 18">
+									</div>
+								</div>
+								<div class="input__block input__block--two">
+									<div class="input__image input__image--phone"></div>
+									<div class="input__field">
+										<label class="input__label">Телефон</label>
+										<input class="input" type="tel" value="+7 923 696-69-89">
+									</div>
+								</div>
+								<div class="input__block input__block--two">
+									<div class="input__image input__image--email"></div>
+									<div class="input__field">
+										<label class="input__label">Email</label>
+										<input class="input" type="email" value="address@server.ru">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="inputs__div">
-						<h4 class="div-title">Паспорт</h4>
-						<div class="inputs">
-							<div class="input__block input__block--one">
-								<div class="input__image input__image--adress"></div>
-								<div class="input__field">
-									<label class="input__label">Серия паспорта</label>
-									<input class="input" type="text" value="2356">
-								</div>
+					<div class="info__div">
+						<div class="info__img"></div>
+						<div class="info__text">
+							<p class="info__paragraph">Выберите тип компании: Организация, ИП или Самозанятый — и введите ваш ИНН.</p>
+							<p class="info__paragraph">Укажите ИНН вашей компании — мы автоматически подставим остальные данные (название, адрес и т.п.) из официальной базы ФНС.</p>
+							<p class="info__paragraph">Если данные не найдены или вы хотите изменить — вы сможете это сделать вручную.</p>
+						</div>
+					</div>
+				</section>
+				<section class="item__section">
+					<div class="main__blocks main__templates">
+
+					</div>
+					<div class="info__div">
+						<div class="info__img"></div>
+						<div class="info__text">
+							<p class="info__paragraph">Для оформления документов, загрузите образец подписи и печати компании на прозрачном фоне. Эти образцы будут добавлены в документы при их оформлении.</p>
+						</div>
+					</div>
+				</section>
+				<section class="item__section">
+					<div class="main__blocks main__templates">
+						<h4>Шаблоны прав</h4>
+						<div class="radios">
+							<label class="radio__input">
+								<input type="radio" name="role" value="Владелец">
+								<span>Владелец</span>
+							</label>
+							<label class="radio__input">
+								<input type="radio" name="role" value="Администратор" checked>
+								<span>Администратор</span>
+							</label>
+							<label class="radio__input">
+								<input type="radio" name="role" value="Менеджер">
+								<span>Менеджер</span>
+							</label>
+							<label class="radio__input">
+								<input type="radio" name="role" value="Гость">
+								<span>Гость</span>
+							</label>
+						</div>
+						<h4>Точная настройка прав</h4>
+						<div class="checkboxes">
+							<div class="checkboxes__input">
+								<input type="checkbox" value="" checked>
+								<label>Подписывать документы</label>
 							</div>
-							<div class="input__block input__block--three">
-								<div class="input__image input__image--adress"></div>
-								<div class="input__field">
-									<label class="input__label">Номер паспорта</label>
-									<input class="input" type="text" value="563985">
-								</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="" checked>
+								<label>Отправлять письма от компании</label>
 							</div>
-							<div class="input__block input__block--three">
-								<div class="input__image input__image--adress"></div>
-								<div class="input__field">
-									<label class="input__label">Кем выдан</label>
-									<input class="input" type="text" value="Коломенским УВД МО">
-								</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="" checked>
+								<label>Отвечать на письма</label>
 							</div>
-							<div class="input__block input__block--one">
-								<div class="input__image input__image--adress"></div>
-								<div class="input__field">
-									<label class="input__label">Когда выдан</label>
-									<input class="input" type="date" value="12/11/2022">
-								</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="">
+								<label>Добавлять и удалять отделы</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="">
+								<label>Редактировать отделы</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="" checked>
+								<label>Добавлять и удалять товары</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="" checked>
+								<label>Редактировать товары</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="">
+								<label>Добавлять и удалять пользователей</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="">
+								<label>Редактировать права пользователей</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="">
+								<label>Редактировать профиль</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="">
+								<label>Удалять пользователей</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="" checked>
+								<label>Создавать шаблоны документов</label>
+							</div>
+							<div class="checkboxes__input">
+								<input type="checkbox" value="">
+								<label>Удалять пользователей</label>
 							</div>
 						</div>
 					</div>
-					<div class="inputs__div">
-						<h4 class="div-title">Контактные данные</h4>
-						<div class="inputs">
-							<div class="input__block input__block--four">
-								<div class="input__image input__image--adress"></div>
-								<div class="input__field">
-									<label class="input__label">Адрес регистрации</label>
-									<input class="input" type="text" value="г. Москва, Инженерная улица, 18">
-								</div>
-							</div>
-							<div class="input__block input__block--two">
-								<div class="input__image input__image--adress"></div>
-								<div class="input__field">
-									<label class="input__label">Телефон</label>
-									<input class="input" type="tel" value="+7 923 696-69-89">
-								</div>
-							</div>
-							<div class="input__block input__block--two">
-								<div class="input__image input__image--adress"></div>
-								<div class="input__field">
-									<label class="input__label">Email</label>
-									<input class="input" type="email" value="address@server.ru">
-								</div>
-							</div>
+					<div class="info__div">
+						<div class="info__img"></div>
+						<div class="info__text">
+							<p class="info__paragraph">Выберите сотрудников, которые могут заключать договоры от имени вашей организации.</p>
 						</div>
 					</div>
-					<div class="inputs__div">
-
-					</div>
-					<div class="inputs__div">
-
-					</div>
-					<div class="inputs__div">
-
-					</div>
-				</div>
-				<div class="info__div">
-					<div class="info__img"></div>
-					<div class="info__text">
-						<p class="info__paragraph">Выберите тип компании: Организация, ИП или Самозанятый — и введите ваш ИНН.</p>
-						<p class="info__paragraph">Укажите ИНН вашей компании — мы автоматически подставим остальные данные (название, адрес и т.п.) из официальной базы ФНС.</p>
-						<p class="info__paragraph">Если данные не найдены или вы хотите изменить — вы сможете это сделать вручную.</p>
-					</div>
-				</div>
+				</section>
 			</div>
 		</main>
 	</div>
