@@ -116,11 +116,27 @@ button{
     grid-row: 1 / span 2;
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
     margin: 10px 24px 10px 0;
+    justify-content: space-between;
     border-radius:20px;
     background-color: #fff;
     width: 296px;
+    height: 100%;
+}
+
+.asidemenu-top {
+    position: sticky;
+    top: 0;
+}
+
+.asidemenu-bottom{
+    margin-top: auto;
+}
+
+.asidemenu__list-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -168,6 +184,7 @@ button{
     font-size: 15px;
 }
 
+
 /* -------------- Главная информация -------------- */
 
 .main{
@@ -181,12 +198,26 @@ button{
     width: 100%-30px;
     padding: 30px 0 30px 30px;
 }
+
 .item__section{
     display: flex;
 }
+
 .main__blocks{
     width: 879px;
     margin-right: 160px;
+    border-bottom: 1px solid rgba(202, 210, 221, 1);
+    padding-top: 40px;
+}
+
+.section__templates .main__blocks{
+    border: none;
+    padding: 0;
+}
+
+.section__templates{
+    border-bottom: 1px solid rgba(202, 210, 221, 1);
+    padding: 40px 0;
 }
 
 .main__title-block{
@@ -255,8 +286,10 @@ button{
     background: transparent url('../Image/phone.svg') no-repeat center / contain;
 }
 
-.input__image--email{
-    background: transparent url('../Image/email.svg') no-repeat center / contain;
+.input__image--email {
+    background-color: rgb(136, 150, 157);
+    mask: url('../Image/email.svg') center / contain no-repeat;
+    -webkit-mask: url('../Image/email.svg') center / contain no-repeat;
 }
 
 .input__image--company{
@@ -339,6 +372,7 @@ button{
     display: flex;
     float: right;
 }
+
 .info__img{
     background: transparent url('../Image/info.svg') no-repeat center / contain;
     width: 24px;
@@ -380,9 +414,12 @@ button{
 
 .btn-img{
     display: inline-block;
-    background: transparent url('../Image/btn.svg') no-repeat center / contain;
     width: 24px;
     height: 24px;
+}
+
+.btn-img--add{
+    background: transparent url('../Image/btn.svg') no-repeat center / contain;
 }
 
 .btn-img,
@@ -420,6 +457,7 @@ button{
     width: 24px;
     height: 24px;
 }
+
 .data__company{
     flex: 1;
 }
@@ -475,7 +513,6 @@ button{
     width: 24px;
     height: 24px;
     background: transparent url('../Image/radio.svg') no-repeat center / contain;
-    
 }
 
 .radio__input input[type="radio"]:checked + span::before {
@@ -491,9 +528,128 @@ button{
     gap: 15px;
 }
 
+.cards__input{
+    display: flex;
+    gap: 15px;
+    border-bottom: 1px solid rgba(202, 210, 221, 1);
+    padding-bottom: 40px;
+}
 
+.input__img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 283px;
+    height: 250px;
+    border: 1px dashed rgba(136, 150, 157, 1);
+    border-radius: 20px;
+    color: rgba(136, 150, 157, 1);
+}
 
+.upload-button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
 
+.upload-img{
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: transparent url('../Image/upload.svg') no-repeat center / contain;
+}
+
+.preview {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    align-items: center;
+}
+
+.clear-img {
+    display: none;
+    width: 26px;
+    height: 26px;
+    background: transparent url('../Image/clear.svg') no-repeat center / contain;
+    border: none;
+    position: absolute;
+    top: -15px;
+    right: -35px;
+}
+
+.btn__item{
+    margin: 15px 0;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid rgb(202, 210, 221);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.btn__item--save{
+    color: white;
+    background-color: rgb(108, 99, 229);
+}
+
+.btn__item--reset{
+    flex: 1;
+}
+
+.btn__item--delete{
+    color: rgb(234, 76, 58);
+    border: 1px solid rgb(234, 76, 58);
+}
+
+.btns__list-save{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.item__section--btns{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.btn-img--save{
+    background: transparent url('../Image/radioChecked.svg') no-repeat center / contain;
+}
+
+.btn-img-reset{
+    background: transparent url('../Image/reset.svg') no-repeat center / contain;
+}
+
+.btn-img-delete{
+    background: transparent url('../Image/delete.svg') no-repeat center / contain;
+}
+
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    accent-color: rgb(108, 99, 229);
+}
 
 
 
