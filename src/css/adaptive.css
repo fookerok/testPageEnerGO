@@ -1,0 +1,154 @@
+@media (max-width: 1724px) {
+	.item__section{
+	flex-direction: column;
+	}
+	.main__blocks {
+		order: 2;
+	}
+
+	.info__div {
+		order: 1;
+		width: 100%;
+		margin-bottom: 35px;
+	}
+	.info__text{
+		width: 100%;
+	}
+	.info__paragraph{
+		margin: 0;
+	}
+}
+
+@media (max-width: 1199px) {
+	.aside {
+		position: fixed;
+		top: 0;
+		left: -286px;
+		width: 286px;
+		height: 100%;
+		background: #fff;
+		transition: left 0.3s ease;
+		z-index: 1000;
+		margin-top: 0;
+		margin-left: 0;
+	}
+
+	.aside.open {
+		left: 0;
+	}
+
+	.burger,.aside-close{
+		display: block;
+	}
+
+	.aside-close{
+		float: right;
+	}
+
+	.logo__block{
+		padding-top: 0;
+	}
+
+	.item__section{
+		padding: 10px;
+	}
+
+	.main__info{
+		padding: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.burger {
+		display: none;
+	}
+
+	.aside{
+		height: 100vh;
+	}
+}
+
+@media (max-width: 960px) {
+	.main__blocks {
+		width: auto;
+	}
+
+	.inputs, .input__block--four,.input__block--three, .input__block--two{
+		width: auto;
+	}
+
+	.header{
+		height: auto;
+	}
+
+	.cards__input{
+		flex-wrap: wrap;
+	}
+
+	.menu{
+		gap: 5px;
+		margin: 0 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.button__money {
+		font-size: 12px;
+		white-space: nowrap;
+		width: 30px;
+		width: 90px;
+	}
+
+	.nav__right-profile{
+		margin: 0 10px;
+	}
+
+	.info__text{
+		font-size: 14px;
+	}
+
+	.input, .select {
+		font-size: 14px;
+	}
+
+	.nav{
+		justify-content: center;
+	}
+
+	.nav__left{
+		width: 100%;
+	}
+}
+
+@media (max-width: 460px){
+	.company{
+		white-space: nowrap;
+		font-size: 12px;
+	}
+
+	.menu__link{
+		font-size: 12px;
+		white-space: nowrap;
+	}
+
+	.burger{
+		font-size: 15px;
+		width: 30px;
+		height: 30px;
+	}
+
+	.checkboxes{
+		display: block;
+	}
+	.checkboxes__input{
+		margin-bottom: 10px;
+	}
+
+	.btns__list-save{
+		display: block;
+	}
+
+	.btn__item--reset, .btn__item--save{
+		width: 150px;
+	}
+}

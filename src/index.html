@@ -2,17 +2,128 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/adaptive.css">
 	<link rel="icon" href="Image/x-icon/favicon.ico">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 	<title>ООО "Просто договор"</title>
 </head>
 <body>
 	<div class="page">
+		<aside class="aside">
+			<div class="aside-close__block">
+				<button class="aside-close" aria-label="Закрыть меню">✕</button>
+			</div>
+			<div class="logo__block">
+				<a href="#" class="logo">
+					<img class="logo-desktop" src="Image/logo.svg" alt="лого">
+					<img class="logo-adaptive" src="Image/logoAdaptive.svg" alt="лого" style="display: none">
+				</a>
+				<a href="#" class="close">
+					<img class="exit-btn" src="Image/exit.svg" alt="выход">
+				</a>
+			</div>
+			<div class="asidemenu__list-block">
+				<div class="asidemenu-top">
+					<div class="asidemenu">
+						<h2 class="asidemenu__title">Рабочее меню</h2>
+						<ul class="asidemenu__list">
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Панель управления">
+									<img class="asidemenu__img" src="Image/controlPanel.svg" alt="#">
+									<p class="asidemenu__name">Панель управления</p>
+								</a>
+							</li>
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Мои компании">
+									<img class="asidemenu__img" src="Image/myCompany.svg" alt="#">
+									<p class="asidemenu__name">Мои компании</p>
+								</a>
+							</li>
+							<li class="asidemenu__item asidemenu__item--active">
+								<a href="#" class="asidemenu__link" title="Сотрудники">
+									<img class="asidemenu__img" src="Image/employees.svg" alt="#">
+									<p class="asidemenu__name">Сотрудники</p>
+								</a>
+							</li>
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Рабочие документы">
+									<img class="asidemenu__img" src="Image/workDocuments.svg" alt="#">
+									<p class="asidemenu__name">Рабочие документы</p>
+								</a>
+							</li>
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Клиенты">
+									<img class="asidemenu__img" src="Image/clients.svg" alt="#">
+									<p class="asidemenu__name">Клиенты</p>
+								</a>
+							</li>
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Шаблоны документов">
+									<img class="asidemenu__img" src="Image/templates.svg" alt="#">
+									<p class="asidemenu__name">Шаблоны документов</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="asidemenu">
+						<h2 class="asidemenu__title">Управление</h2>
+						<ul class="asidemenu__list">
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Мой профиль">
+									<img class="asidemenu__img" src="Image/myProfile.svg" alt="#">
+									<p class="asidemenu__name">Мой профиль</p>
+								</a>
+							</li>
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Настройки">
+									<img class="asidemenu__img" src="Image/settings.svg" alt="#">
+									<p class="asidemenu__name">Настройки</p>
+								</a>
+							</li>
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Баланс и оплата">
+									<img class="asidemenu__img" src="Image/pay.svg" alt="#">
+									<p class="asidemenu__name">Баланс и оплата</p>
+								</a>
+							</li>
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Проверить документ">
+									<img class="asidemenu__img" src="Image/check.svg" alt="#">
+									<p class="asidemenu__name">Проверить документ</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="asidemenu-bottom">
+					<div class="asidemenu">
+						<h2 class="asidemenu__title">Помощь</h2>
+						<ul class="asidemenu__list">
+							<li class="asidemenu__item">
+								<a href="#" class="asidemenu__link" title="Документация">
+								<img class="asidemenu__img" src="Image/documentation.svg" alt="#">
+								<p class="asidemenu__name">Документация</p>
+								</a>
+							</li>
+							<li class="asidemenu__item asidemenu__item--help" title="Поддержка">
+								<a href="#" class="asidemenu__link">
+								<img class="asidemenu__img" src="Image/support.svg" alt="#">
+								<p class="asidemenu__name">Поддержка</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</aside>
 		<h1 class="title">Просто договор</h1>
 		<header class="header">
+			<button class="burger" aria-label="Меню">
+				☰
+			</button>
 			<nav class="nav">
 				<div class="nav__left">
 					<ul class="menu">
@@ -47,118 +158,13 @@
 				</div>
 			</nav>
 		</header>
-		<aside class="aside">
-			<div class="logo__block">
-				<a href="#" class="logo">
-				<img src="Image/logo.svg" alt="лого">
-				</a>
-				<a href="#" class="close">
-				<img src="Image/close.svg" alt="выход">
-				</a>
-			</div>
-			<div class="asidemenu__list-block">
-				<div class="asidemenu-top">
-				<div class="asidemenu">
-					<h2 class="asidemenu__title">Рабочее меню</h2>
-					<ul class="asidemenu__list">
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/controlPanel.svg" alt="#">
-						<p class="asidemenu__name">Панель управления</p>
-						</a>
-					</li>
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/myCompany.svg" alt="#">
-						<p class="asidemenu__name">Мои компании</p>
-						</a>
-					</li>
-					<li class="asidemenu__item asidemenu__item--active">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/employees.svg" alt="#">
-						<p class="asidemenu__name">Сотрудники</p>
-						</a>
-					</li>
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/workDocuments.svg" alt="#">
-						<p class="asidemenu__name">Рабочие документы</p>
-						</a>
-					</li>
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/clients.svg" alt="#">
-						<p class="asidemenu__name">Клиенты</p>
-						</a>
-					</li>
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/templates.svg" alt="#">
-						<p class="asidemenu__name">Шаблоны документов</p>
-						</a>
-					</li>
-					</ul>
-				</div>
-				<div class="asidemenu">
-					<h2 class="asidemenu__title">Управление</h2>
-					<ul class="asidemenu__list">
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/myProfile.svg" alt="#">
-						<p class="asidemenu__name">Мой профиль</p>
-						</a>
-					</li>
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/settings.svg" alt="#">
-						<p class="asidemenu__name">Настройки</p>
-						</a>
-					</li>
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/pay.svg" alt="#">
-						<p class="asidemenu__name">Баланс и оплата</p>
-						</a>
-					</li>
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/check.svg" alt="#">
-						<p class="asidemenu__name">Проверить документ</p>
-						</a>
-					</li>
-					</ul>
-				</div>
-				</div>
-
-				<div class="asidemenu-bottom">
-				<div class="asidemenu">
-					<h2 class="asidemenu__title">Помощь</h2>
-					<ul class="asidemenu__list">
-					<li class="asidemenu__item">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/documentation.svg" alt="#">
-						<p class="asidemenu__name">Документация</p>
-						</a>
-					</li>
-					<li class="asidemenu__item asidemenu__item--help">
-						<a href="#" class="asidemenu__link">
-						<img class="asidemenu__img" src="Image/support.svg" alt="#">
-						<p class="asidemenu__name">Поддержка</p>
-						</a>
-					</li>
-					</ul>
-				</div>
-				</div>
-			</div>
-		</aside>
-
 		<main class="main">
 			<div class="main__title-block">
 				<button class="main__button-exit"></button>
 				<h3 class="main__title">Добавление сотрудника</h3>
 			</div>
 			<div class="main__info">
-				<section class="item__section">
+				<section class="item__section item__section--first">
 					<div class="main__blocks">
 						<div class="inputs__div">
 							<h4 class="div-title">Имя сотрудника</h4>
@@ -455,6 +461,7 @@
 				</section>
 			</div>
 		</main>
+
 	</div>
 	<script src="js/script.js"></script>
 </body>

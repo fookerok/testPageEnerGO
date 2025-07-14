@@ -8,13 +8,13 @@ body{
     font-family: "Open Sans";
     padding: 0 12px;
 }
+
 .page {
     display: grid;
-    grid-template-columns: 296px auto;
-    grid-template-rows: 80px 1fr;
-    gap: 24px;
-    min-height: 100vh;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: min(90px) 1fr;
 }
+
 ul,li,a{
     text-decoration: none;
     list-style-type: none;
@@ -25,10 +25,13 @@ ul,li,a{
 button{
     cursor: pointer;
 }
+
 .title{
     display: none;
 }
+
 /* -------------- Шапка -------------- */
+
 .header{
     grid-column: 2 / span 1;
     background-color: #6C63E5;
@@ -45,6 +48,7 @@ button{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .nav__right {
@@ -87,7 +91,9 @@ button{
     color: #fff;
     font-weight: 600;
     font-size: 15px;
+    display: flex;
 }
+
 .button__company{
     height: 16px;
     width: 16px;
@@ -95,6 +101,7 @@ button{
     background: transparent url('../Image/company.svg') no-repeat center / contain;
     margin: 0 15px 0 10px;
 }
+
 .button__money {
     display: flex;
     align-items: center;
@@ -122,6 +129,7 @@ button{
     background-color: #fff;
     width: 296px;
     height: 100%;
+    overflow: hidden;
 }
 
 .asidemenu-top {
@@ -144,6 +152,7 @@ button{
     display: flex;
     padding: 24px 10px 24px 10px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
@@ -159,9 +168,18 @@ button{
     align-items: center;   
 }
 
+.asidemenu__item:focus{
+    background-color:#F5F7FB;
+    border-radius:10px;
+}
+
 .asidemenu__item--active{
     background-color:#F5F7FB;
     border-radius:10px;
+}
+
+.asidemenu__item--active a img{
+    filter: brightness(0) saturate(100%) invert(41%) sepia(95%) saturate(3837%) hue-rotate(231deg) brightness(99%) contrast(81%);
 }
 
 .asidemenu__title{
@@ -184,7 +202,6 @@ button{
     font-size: 15px;
 }
 
-
 /* -------------- Главная информация -------------- */
 
 .main{
@@ -201,13 +218,17 @@ button{
 
 .item__section{
     display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.item__section--first{
+    padding-top: 0;
 }
 
 .main__blocks{
     width: 879px;
-    margin-right: 160px;
     border-bottom: 1px solid rgba(202, 210, 221, 1);
-    padding-top: 40px;
 }
 
 .section__templates .main__blocks{
@@ -241,6 +262,8 @@ button{
 
 .div-title{
     margin: 0 0 15px 0;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .fio-inputs{
@@ -252,7 +275,7 @@ button{
     align-items: center;
     background-color: #F5F7FB;
     height: 80px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .input__block--one{
@@ -294,6 +317,12 @@ button{
 
 .input__image--company{
     background: transparent url('../Image/myCompany.svg') no-repeat center / contain;
+}
+
+.input__image--company-card{
+    background-color: #6C63E5;
+    mask: url('../Image/myCompany.svg') center / contain no-repeat;
+    -webkit-mask: url('../Image/myCompany.svg') center / contain no-repeat;
 }
 
 .input__image--calendar{
@@ -445,7 +474,7 @@ button{
     align-items: center;
     width: 435px;
     height: 106px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid #CAD2DD;
     gap: 15px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
@@ -476,6 +505,7 @@ button{
 
 .radios {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -651,11 +681,28 @@ input[type="checkbox"]{
     accent-color: rgb(108, 99, 229);
 }
 
+.burger{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
 
-
-
-
-
+.aside-close{
+    display: none;
+    background-color: #fff;
+    border: none;
+    color: #000000;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+}
 
 
 
