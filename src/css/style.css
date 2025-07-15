@@ -68,12 +68,34 @@ button{
     font-size: 15px;
 }
 
-.mini__button{
+.mini__button {
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius:10px;
+    border-radius: 10px;
     border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.mini__button--email {
+    background-image: url('../Image/email.svg');
+}
+
+.mini__button--notification {
+    position: relative;
+    background-image: url('../Image/notification.svg');
+}
+
+.notification-dot {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    width: 6px;
+    height: 6px;
+    background-color: red;
+    border-radius: 50%;
 }
 
 .nav__right-buttons{
@@ -107,7 +129,6 @@ button{
     align-items: center;
     justify-content: center;
     gap: 5px;
-    
     font-weight: 600;
     color: #34434B;
     width: 110px;
@@ -116,6 +137,14 @@ button{
     border-radius: 10px;
     border: none;
 }
+
+
+.button__money-img {
+    width: 20px;
+    height: 20px;
+    background: transparent url('../Image/money.svg') no-repeat center / contain;
+}
+
 
 /* -------------- Боковое меню -------------- */
 
@@ -129,7 +158,6 @@ button{
     background-color: #fff;
     width: 296px;
     height: 100%;
-    overflow: hidden;
 }
 
 .asidemenu-top {

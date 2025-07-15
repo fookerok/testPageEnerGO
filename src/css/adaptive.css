@@ -2,6 +2,11 @@
 	.item__section{
 	flex-direction: column;
 	}
+
+	.item__section--btns{
+		flex-direction: row;
+	}
+
 	.main__blocks {
 		order: 2;
 	}
@@ -63,9 +68,6 @@
 		display: none;
 	}
 
-	.aside{
-		height: 100vh;
-	}
 }
 
 @media (max-width: 960px) {
@@ -73,8 +75,13 @@
 		width: auto;
 	}
 
-	.inputs, .input__block--four,.input__block--three, .input__block--two{
+	.inputs, .input__block--four, .input__block--three, .input__block--two, .input__block--one{
 		width: auto;
+		flex: 1;
+	}
+
+	.input__block{
+		min-width: 400px;
 	}
 
 	.header{
@@ -83,8 +90,12 @@
 
 	.cards__input{
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
+	.cards__input .div-title{
+		text-align: center;
+	}
 	.menu{
 		gap: 5px;
 		margin: 0 30px;
@@ -93,7 +104,7 @@
 	}
 
 	.button__money {
-		font-size: 12px;
+		font-size: 14px;
 		white-space: nowrap;
 		width: 30px;
 		width: 90px;
@@ -111,23 +122,59 @@
 		font-size: 14px;
 	}
 
-	.nav{
-		justify-content: center;
-	}
-
 	.nav__left{
 		width: 100%;
+	}
+
+	.nav__right{
+		width: 100%;
+		justify-content: space-between;
+		margin-right: 20px;
+	}
+
+	.item__section--btns{
+		flex-direction: row;
+	}
+
+	.aside{
+		overflow-y: scroll;
+	}
+	.asidemenu-bottom {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 610px){
+	.item__section--btns{
+		flex-direction: column;
+	}
+
+	.btn__item--reset{
+		flex: none;
+	}
+
+	.btn__item--delete{
+		margin: 0;
+	}
+
+	.radio__input span{
+		font-size: 14px;
+	}
+
+	.card__company{
+		width: auto;
+		margin: 0 auto;
 	}
 }
 
 @media (max-width: 460px){
 	.company{
 		white-space: nowrap;
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.menu__link{
-		font-size: 12px;
+		font-size: 14px;
 		white-space: nowrap;
 	}
 
@@ -140,6 +187,7 @@
 	.checkboxes{
 		display: block;
 	}
+	
 	.checkboxes__input{
 		margin-bottom: 10px;
 	}
@@ -151,4 +199,69 @@
 	.btn__item--reset, .btn__item--save{
 		width: 150px;
 	}
+
+	body{
+		padding: 0;
+	}
+
+	.button__money {
+		font-size: 0;
+	}
+
+	.item__section {
+        padding: 3px;
+    }
+
+	.input__block{
+		min-width: 320px;
+	}
+
+	.nav__right-profile{
+		order: 1;
+	}
+
+	.nav__right-buttons{
+		order: 2;
+	}
+
+	.mini__button, .button__money{
+		padding: 0;
+		width: 25px;
+		height: 25px;
+		background-size: 17px;
+		border-radius: 5px;
+		gap: 0;
+	}
+
+	.button__money-img{
+		background-size: 17px;
+		width: 25px !important;
+		height: 25px;
+	}
+
+	.menu{
+		margin: 0 auto;
+        padding: 0 15px;
+	}
+
+	.header{
+		border-radius: 0;
+		margin: 0;
+	}
+
+	.aside{
+		border-radius: 0 20px 0 0;
+	}
+
+	.notification-dot {
+		top: 6px;
+		right: 7px;
+		width: 3px;
+		height: 3px;
+	}
 }
+
+
+
+
+
