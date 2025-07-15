@@ -41,8 +41,8 @@ button{
     height: 80px;
     border-radius: 20px;
     margin: 10px 0;
-
 }
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -138,13 +138,11 @@ button{
     border: none;
 }
 
-
 .button__money-img {
     width: 20px;
     height: 20px;
     background: transparent url('../Image/money.svg') no-repeat center / contain;
 }
-
 
 /* -------------- Боковое меню -------------- */
 

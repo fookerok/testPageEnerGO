@@ -1,41 +1,36 @@
-	const btnAdd = document.querySelector('.btn-add');
+	document.addEventListener('DOMContentLoaded', () => {
 	const cardsContainer = document.querySelector('.cards-container');
-
-	btnAdd.addEventListener('click', () => {
-		const companySelects = document.querySelectorAll('.select');
-		const company = companySelects[0].options[companySelects[0].selectedIndex].text;
-		const job = document.querySelectorAll('.input.job')[0].value;
-		const department = companySelects[1].options[companySelects[1].selectedIndex].text;
-
+	const createCard = (company, job, department) => {
 		const newCard = document.createElement('div');
 		newCard.className = 'card__company';
 		newCard.innerHTML = `
 			<div class="input__image input__image--company-card image__card"></div>
 			<div class="data__company">
-			<div class="data-name">${company}</div>
-			<div class="data-job">${job}</div>
-			<div class="data-department">${department}</div>
+				<div class="data-name">${company}</div>
+				<div class="data-job">${job}</div>
+				<div class="data-department">${department}</div>
 			</div>
 			<div class="btn-block">
-			<button class="btn-delete"></button>
+				<button class="btn-delete"></button>
 			</div>
 		`;
 
 		newCard.querySelector('.btn-delete').addEventListener('click', () => {
 			newCard.remove();
 		});
-
 		cardsContainer.appendChild(newCard);
+	}
+
+	document.querySelector('.btn-add').addEventListener('click', () => {
+		const companySelects = document.querySelectorAll('.select');
+		const company = companySelects[0].options[companySelects[0].selectedIndex].text;
+		const job = document.querySelector('.input.job').value;
+		const department = companySelects[1].options[companySelects[1].selectedIndex].text;
+
+		createCard(company, job, department);
 	});
 
-	document.querySelectorAll('.btn-delete').forEach(btn => {
-		btn.addEventListener('click', () => {
-			btn.closest('.card__company').remove();
-		});
-	});
-
-document.addEventListener('DOMContentLoaded', () => {
-		function initImageUploader(id) {
+		const initImageUploader = (id) => {
 			const input = document.getElementById('imageInput' + id);
 			const previewContainer = document.querySelector('.preview' + id);
 			const previewImage = previewContainer.querySelector('img');
@@ -82,9 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 		}
 
-		initImageUploader(1);
-		initImageUploader(2);
-		initImageUploader(3);
+	initImageUploader(1);
+	initImageUploader(2);
+	initImageUploader(3);
 		
 	const logo = document.querySelector('.logo-desktop');
 	const logoAdaptive = document.querySelector('.logo-adaptive');
@@ -149,7 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		aside.classList.remove('open');
 		burger.style.display = 'block'; 
 	});
-
 });
 
 

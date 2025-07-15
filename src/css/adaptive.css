@@ -16,9 +16,11 @@
 		width: 100%;
 		margin-bottom: 35px;
 	}
+	
 	.info__text{
 		width: 100%;
 	}
+
 	.info__paragraph{
 		margin: 0;
 	}
@@ -67,7 +69,6 @@
 	.burger {
 		display: none;
 	}
-
 }
 
 @media (max-width: 960px) {
@@ -96,6 +97,7 @@
 	.cards__input .div-title{
 		text-align: center;
 	}
+
 	.menu{
 		gap: 5px;
 		margin: 0 30px;
@@ -139,6 +141,7 @@
 	.aside{
 		overflow-y: scroll;
 	}
+
 	.asidemenu-bottom {
 		margin-top: 50px;
 	}
