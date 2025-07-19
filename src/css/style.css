@@ -40,6 +40,11 @@ button {
     background-color: white;
     border: none;
 }
+.close-btn-image{
+    background: transparent url('../Image/close.svg') no-repeat center / contain;
+    width: 24px;
+    height: 24px;
+}
 
 .title-page {
     display: none;
@@ -258,7 +263,7 @@ button {
     background-color: var(--primary);
 }
 
-.asidemenu__img{
+.asidemenu__img, .btn-img, .radio__input span::before, .radio__input input[type="radio"]:checked + span::before{
     background-color: var(--gray);
     mask: center / contain no-repeat;
     -webkit-mask: center / contain no-repeat;
@@ -417,6 +422,16 @@ button {
     font-size: 1rem;
 }
 
+.input, .select{
+    padding:0;
+}
+
+option{
+    background-color: #fff;
+    padding: 5px;
+
+}
+
 .fio-inputs{
     gap: 10px;
 }
@@ -485,12 +500,39 @@ button {
 }
 
 .input__field{
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 3px;
     border-left: 1px solid var(--borders);
     padding-left: 20px; 
+}
+
+.input__label {
+    color: var(--gray);
+    font-size: 14px;
+
+
+    /* position: absolute;
+    top: 50%;
+    left: 21px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s ease all; */
+}
+
+/* .input:focus ~ .input__label,
+.input:not(:placeholder-shown) ~ .input__label {
+    top: -8px;
+} */
+
+.input__label--select, .select{
+    padding-left: 20px; 
+}
+
+.input__field--select{
+    padding: 0;
 }
 
 .input, .select{
@@ -510,17 +552,11 @@ button {
     /* background: url('../Image/select.svg') no-repeat right 20px top 3px; */
 }
 
-.input__label {
-    color: var(--gray);
-    font-size: 14px;
-}
-
 .inputs{
     gap: 10px;
     display: flex;
     width: 879px;
     flex-wrap: wrap;
-    
 }
 
 .select__field{
@@ -590,14 +626,21 @@ button {
     font-size: 15px;
 }
 
-.btn-img{
-    display: inline-block;
-    width: 24px;
-    height: 24px;
+.btn-add:hover{
+    transition: 0.3s ease all;
+    background-color: var(--primary);
+    color: white;
 }
 
 .btn-img--add{
-    background: transparent url('../Image/btn.svg') no-repeat center / contain;
+    mask-image:url('../Image/btn.svg');
+    -webkit-mask-image: url('../Image/btn.svg');
+    background-color: var(--primary);
+}
+
+.btn-add:hover .btn-img--add{
+    transition: 0.3s ease all;
+    background-color: white;
 }
 
 .btn-img,
@@ -679,11 +722,11 @@ button {
     font-size: 15px;
 }
 
-/* .radio__input span:hover {
+.radio__input span:hover {
     background-color:var(--primary);
     transition: background-color 0.3s ease;
     color: white;
-} */
+}
 
 .radio__input input[type="radio"]:checked + span {
     background-color: var(--primary);
@@ -694,14 +737,19 @@ button {
 
 .radio__input span::before {
     content: '';
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: transparent url('../Image/radio.svg') no-repeat center / contain;
+    mask-image: url('../Image/radio.svg');
+    -webkit-mask-image: url('../Image/radio.svg');
+    background-color: var(--primary);
 }
 
 .radio__input input[type="radio"]:checked + span::before {
-    background: transparent url('../Image/radioChecked.svg') no-repeat center / contain;
+    background: url('../Image/radioChecked.svg') no-repeat center / contain;
+}
+
+.radio__input:hover input[type="radio"] + span::before {
+    mask-image: url('../Image/radioChecked.svg');
+    -webkit-mask-image: url('../Image/radioChecked.svg');
+    background-color: white;
 }
 
 .checkboxes {
@@ -796,13 +844,27 @@ button {
     background-color: var(--primary);
 }
 
-.btn__item--reset{
-    flex: 1;
+.btn__item--save:hover{
+    background-color: white;
+    transition: 0.3s ease all;
+    color:  var(--primary);;
+}
+
+.btn__item--reset:hover{
+    background-color: var(--primary);
+    transition: 0.3s ease all;
+    color: white;
 }
 
 .btn__item--delete{
     color: var(--danger);
     border: 1px solid var(--danger);
+}
+
+.btn__item--delete:hover{
+    background-color: var(--danger);
+    transition: 0.3s ease all;
+    color: white;
 }
 
 .btns__list-save{
@@ -819,16 +881,38 @@ button {
 }
 
 .btn-img--save{
-    background: transparent url('../Image/radioChecked.svg') no-repeat center / contain;
+    mask-image: url('../Image/radioChecked.svg');
+    -webkit-mask-image: url('../Image/radioChecked.svg');
+    background-color: white;
 }
 
-.btn-img-reset{
-    background: transparent url('../Image/reset.svg') no-repeat center / contain;
+.btn__item--save:hover .btn-img--save{
+    background-color: var(--primary);
+    transition: background-color 0.3s ease;
 }
 
-.btn-img-delete{
-    background: transparent url('../Image/delete.svg') no-repeat center / contain;
+.btn-img--reset{
+    mask-image: url('../Image/reset.svg');
+    -webkit-mask-image: url('../Image/reset.svg');
+    background-color: var(--primary);
 }
+
+.btn__item--reset:hover .btn-img--reset{
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-img--delete{
+    mask-image: url('../Image/delete.svg');
+    -webkit-mask-image: url('../Image/delete.svg');
+    background-color: var(--danger);
+}
+
+.btn__item--delete:hover .btn-img--delete{
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
 
 input[type="checkbox"]{
     width: 15px;
@@ -858,8 +942,6 @@ input[type="checkbox"]{
     height: 40px;
     border-radius: 3px;
 }
-
-
 
 
 
