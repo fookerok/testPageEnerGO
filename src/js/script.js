@@ -154,9 +154,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		aside.classList.add('open');
 		toggleOverlay(true);
 	});
+
+	const companyList = document.querySelector('.company__list-block');
+	const btnCompany = document.querySelector('.button__company');
+
+	btnCompany.addEventListener('click', () =>{
+		if (companyList.style.display === 'none') {
+			companyList.style.display = 'block';
+		} else {
+			companyList.style.display = 'none';
+		}
+	});
+	
 });
-
-
-
-
-

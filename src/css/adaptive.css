@@ -190,7 +190,6 @@
 		margin: 0 10px;
 	}
 
-	
 	.button__money {
 		font-size: 0;
 	}
@@ -242,7 +241,7 @@
 	}
 
 	.btn__item--reset, .btn__item--save{
-		width: 150px;
+		width: 160px;
 	}
 
 	.item__section {
@@ -252,7 +251,6 @@
 	.input__block{
 		min-width: 320px;
 	}
-
 }
 
 
