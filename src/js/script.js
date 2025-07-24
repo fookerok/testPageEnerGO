@@ -4,14 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		const newCard = document.createElement('div');
 		newCard.className = 'card__company';
 		newCard.innerHTML = `
-			<div class="input__image input__image--company-card image__card"></div>
+			<div class="input__image input__image--company-card image__card">
+				<svg width="24" height="24">
+					<use href="Image/sprite.svg#myCompany"/>
+				</svg>
+			</div>
 			<div class="data__company">
 				<div class="data-name">${company}</div>
 				<div class="data-job">${job}</div>
 				<div class="data-department">${department}</div>
 			</div>
 			<div class="btn-block">
-				<button class="btn-delete"></button>
+				<button class="btn-delete">
+					<svg width="24px" height="24px">
+						<use href="Image/sprite.svg#delete"/>
+					</svg>
+				</button>
 			</div>
 		`;
 

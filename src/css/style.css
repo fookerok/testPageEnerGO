@@ -11,7 +11,6 @@
 html {
     margin: 0;
     padding: 0;    
-    font-size: 16px;
 }
 
 body {
@@ -23,6 +22,7 @@ body {
 .page {
     display: grid;
     grid-template-columns: auto 1fr;
+    margin: 0;
 }
 
 ul, li, a {
@@ -41,9 +41,14 @@ button {
     border: none;
 }
 .close-btn-image{
-    background: transparent url('../Image/close.svg') no-repeat center / contain;
+    background: transparent;
+    color: var(--gray);
     width: 24px;
     height: 24px;
+}
+
+.close-btn-image:hover{
+    color: var(--primary);
 }
 
 .title-page {
@@ -52,7 +57,7 @@ button {
 
 .overlay {
     position: relative;
-    padding: 0 0.75rem;
+    padding: 0 12px;
 }
 
 .overlay::before {
@@ -85,7 +90,7 @@ button {
     width: 100%;
     height: 5rem;
     border-radius: 1.25rem;
-    margin: 0.625rem 0;
+    margin: 10px 0;
 }
 
 .nav {
@@ -102,8 +107,8 @@ button {
 }
 
 .menu {
-    margin-left: 2.5rem;
-    gap: 2.5rem;
+    margin-left: 40px;
+    gap: 40px;
     display: flex;
 }
 
@@ -122,42 +127,28 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1.25rem;
+    color: white;
 }
 
-.mini__button--email {
-    background-image: url('../Image/email.svg');
-}
-
-.mini__button--notification {
-    position: relative;
-    background-image: url('../Image/notification.svg');
-}
-
-.notification-dot {
-    position: absolute;
-    top: 0.6875rem;
-    right: 0.75rem;
-    width: 0.375rem;
-    height: 0.375rem;
-    background-color: red;
-    border-radius: 50%;
+.mini__button--email svg, .mini__button--notification svg{
+    margin-top: 4px; 
 }
 
 .nav__right-buttons {
     display: flex;
-    gap: 0.625rem;
+    gap: 10px;
 }
 
 .nav__right-profile {
     display: flex;
     align-items: center;
-    margin: 0 2.5rem;
+    margin: 0 40px;
 }
 
 .company {
     color: white;
     font-weight: 600;
-    font-size: 0.9375rem;
+    font-size: 15px;
     display: flex;
 }
 
@@ -165,8 +156,8 @@ button {
     height: 1rem;
     width: 1rem;
     border: 0;
-    background: transparent url('../Image/company.svg') no-repeat center / contain;
-    margin: 0 0.9375rem 0 0.625rem;
+    background: transparent;
+    margin-right: 15px;
 }
 
 .button__money {
@@ -186,7 +177,7 @@ button {
 .button__money-img{
     width: 1.25rem;
     height: 1.25rem;
-    background: transparent url('../Image/money.svg') no-repeat center / contain;
+    background: transparent;
 }
 
 .company__list-block{
@@ -233,11 +224,11 @@ button {
     grid-row: 1 / span 2;
     display: flex;
     flex-direction: column;
-    margin: 10px 24px 10px 0;
+    margin: 10px 12px;
     justify-content: space-between;
     border-radius:20px;
     background-color: white;
-    width: 296px;
+    width: 18.5rem;
     height: 100%;
     transition: width 0.3s ease;
 }
@@ -266,7 +257,7 @@ button {
 .logo__block{
     display: flex;
     flex-wrap: nowrap;
-    padding: 24px 10px 24px 10px;
+    padding: 24px 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -279,97 +270,35 @@ button {
 .asidemenu__item{
     margin: 0 10px;
     padding-left: 15px;
-    max-width: 276px;
-    height: 50px; 
+    max-width: 17.25rem;
+    height: 3.125rem; 
     display: flex;
     align-items: center;   
 }
 
 .asidemenu__item:focus{
     background-color: var(--light-bg);
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .asidemenu__item--active{
     background-color: var(--light-bg);
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .asidemenu__item--active a .asidemenu__img{
-    background-color: var(--primary);
+    color: var(--primary);
 }
 
-.asidemenu__img, .btn-img, .radio__input span::before, .radio__input input[type="radio"]:checked + span::before{
-    background-color: var(--gray);
-    mask: center / contain no-repeat;
-    -webkit-mask: center / contain no-repeat;
+.asidemenu__img, .radio__input span::before, .radio__input input[type="radio"]:checked + span::before{
+    color: var(--gray);
     display: inline-block;
     width: 24px;
     height: 24px;
 }
 
 .asidemenu__item:hover .asidemenu__img {
-    background-color: var(--primary);
-}
-
-.asidemenu__img--control-panel{
-    mask-image: url('../Image/controlPanel.svg');
-    -webkit-mask-image: url('../Image/controlPanel.svg');
-}
-
-.asidemenu__img--my-company{
-    mask-image: url('../Image/myCompany.svg');
-    -webkit-mask-image: url('../Image/myCompany.svg');
-}
-
-.asidemenu__img--employees{
-    mask-image: url('../Image/employees.svg');
-    -webkit-mask-image: url('../Image/employees.svg');
-}
-
-.asidemenu__img--work-documents{
-    mask-image: url('../Image/workDocuments.svg');
-    -webkit-mask-image: url('../Image/workDocuments.svg');
-}
-
-.asidemenu__img--clients{
-    mask-image: url('../Image/clients.svg');
-    -webkit-mask-image: url('../Image/clients.svg');
-}
-
-.asidemenu__img--templates{
-    mask-image: url('../Image/templates.svg');
-    -webkit-mask-image: url('../Image/templates.svg');
-}
-
-.asidemenu__img--my-profile{
-    mask-image: url('../Image/myProfile.svg');
-    -webkit-mask-image: url('../Image/myProfile.svg');
-}
-
-.asidemenu__img--settings{
-    mask-image: url('../Image/settings.svg');
-    -webkit-mask-image: url('../Image/settings.svg');
-}
-
-.asidemenu__img--pay{
-    mask-image: url('../Image/pay.svg');
-    -webkit-mask-image: url('../Image/pay.svg');
-}
-
-.asidemenu__img--check{
-    mask-image: url('../Image/check.svg');
-    -webkit-mask-image: url('../Image/check.svg');
-}
-
-.asidemenu__img--documentation{
-    mask-image: url('../Image/documentation.svg');
-    -webkit-mask-image: url('../Image/documentation.svg');
-}
-
-.asidemenu__img--support{
-    mask-image: url('../Image/support.svg');
-    -webkit-mask-image: url('../Image/support.svg');
+    color: var(--primary);
 }
 
 .asidemenu__title{
@@ -392,8 +321,6 @@ button {
     font-size: 15px;
 }
 
-
-
 /* -------------- Главная информация -------------- */
 
 .main{
@@ -412,6 +339,10 @@ button {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+}
+
+.item__section-title{
+    font-size: 16px;
 }
 
 .item__section--first{
@@ -439,11 +370,12 @@ button {
     gap: 15px;
 }
 
-.main__button-exit{
-    background: transparent url('../Image/arrowLeft.svg') no-repeat center / contain;
+.main__button-exit {
+    background: transparent;
     border: none;
     width: 24px;
     height: 24px;
+    padding: 0;
 }
 
 .main__title{
@@ -497,38 +429,16 @@ option{
 }
 
 .input__image {
-    background: transparent url('../Image/docx.svg') no-repeat center / contain;
-    width: 24px;
-    height: 24px;
+    color: var(--gray);
+    background: transparent;
+    width: 22px;
+    height: 22px;
     padding: 0 20px;
-}
-
-.input__image--adress{
-    background: transparent url('../Image/adress.svg') no-repeat center / contain;
-}
-
-.input__image--phone{
-    background: transparent url('../Image/phone.svg') no-repeat center / contain;
-}
-
-.input__image--email {
-    background-color: var(--gray);
-    mask: url('../Image/email.svg') center / contain no-repeat;
-    -webkit-mask: url('../Image/email.svg') center / contain no-repeat;
-}
-
-.input__image--company{
-    background: transparent url('../Image/myCompany.svg') no-repeat center / contain;
+    font-size: 24px;
 }
 
 .input__image--company-card{
-    background-color: var(--primary);
-    mask: url('../Image/myCompany.svg') center / contain no-repeat;
-    -webkit-mask: url('../Image/myCompany.svg') center / contain no-repeat;
-}
-
-.input__image--calendar{
-    background: transparent url('../Image/calendar.svg') no-repeat center / contain;
+    color: var(--primary);
 }
 
 .input[type="date"]::-webkit-calendar-picker-indicator {
@@ -537,6 +447,7 @@ option{
 
 .input__field{
     position: relative;
+    height: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -548,20 +459,25 @@ option{
 .input__label {
     color: var(--gray);
     font-size: 14px;
-
-
-    /* position: absolute;
-    top: 50%;
-    left: 21px;
-    transform: translateY(-50%);
-    pointer-events: none;
-    transition: 0.3s ease all; */
 }
 
-/* .input:focus ~ .input__label,
-.input:not(:placeholder-shown) ~ .input__label {
-    top: -8px;
-} */
+
+.input__label--text{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-20%);
+    transition: 0.2s ease all;
+}
+.input__input, .input {
+    padding: 28px 0 0 0;
+}
+
+.input:focus + .input__label--text,
+.input:not(:placeholder-shown) + .input__label--text {
+    top: 14px;
+    transform: translateY(-50%);
+}
 
 .input__label--select, .select{
     padding-left: 20px; 
@@ -585,7 +501,7 @@ option{
     appearance: none;
     width: 100%;
     padding-right: 35px;
-    /* background: url('../Image/select.svg') no-repeat right 20px top 3px; */
+    cursor: pointer;
 }
 
 .inputs{
@@ -605,7 +521,7 @@ option{
     background-color: white;
 }
 
-.select-arrow {
+.select-arrow svg{
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -613,7 +529,6 @@ option{
     pointer-events: none;
     width: 24px;
     height: 24px;
-    background: transparent url('../Image/select.svg') no-repeat center / contain;
 }
 
 .info__div{
@@ -624,11 +539,9 @@ option{
 }
 
 .info__img{
-    background: transparent url('../Image/info.svg') no-repeat center / contain;
-    width: 24px;
-    height: 24px;
-    margin: 5px;
-    margin-right: 15px;
+    color: var(--gray);
+    background: transparent;
+    margin: 5px 15px 5px 5px;
 }
 
 .info__text{
@@ -644,10 +557,11 @@ option{
 }
 
 .inputs__div{
+    
     margin-bottom: 40px;
 }
 
-.btn-add{
+.btn-add {
     margin: 15px 0;
     width: 147px;
     height: 50px;
@@ -660,28 +574,12 @@ option{
     gap: 12px;
     padding: 0 20px;
     font-size: 15px;
-}
-
-.btn-add:hover{
     transition: 0.3s ease all;
+}
+
+.btn-add:hover {
     background-color: var(--primary);
-    color: white;
-}
-
-.btn-img--add{
-    mask-image:url('../Image/btn.svg');
-    -webkit-mask-image: url('../Image/btn.svg');
-    background-color: var(--primary);
-}
-
-.btn-add:hover .btn-img--add{
-    transition: 0.3s ease all;
-    background-color: white;
-}
-
-.btn-img,
-.btn-add span {
-    vertical-align: middle;
+    color: white; 
 }
 
 .image__card{
@@ -709,8 +607,9 @@ option{
 }
 
 .btn-delete{
-    background: transparent url('../Image/delete.svg') no-repeat center / contain;
+    background: transparent;
     border: none;
+    color: var(--danger);
     width: 24px;
     height: 24px;
 }
@@ -737,14 +636,6 @@ option{
     gap: 10px;
 }
 
-.radio__input {
-    cursor: pointer;
-}
-
-.radio__input input[type="radio"] {
-    display: none;
-}
-
 .radio__input span {
     display: inline-flex;
     align-items: center;
@@ -759,7 +650,7 @@ option{
 }
 
 .radio__input span:hover {
-    background-color:var(--primary);
+    background-color: var(--primary);
     transition: background-color 0.3s ease;
     color: white;
 }
@@ -771,21 +662,31 @@ option{
     font-weight: 600;
 }
 
-.radio__input span::before {
-    content: '';
-    mask-image: url('../Image/radio.svg');
-    -webkit-mask-image: url('../Image/radio.svg');
-    background-color: var(--primary);
+.radio__input {
+    cursor: pointer;
 }
 
-.radio__input input[type="radio"]:checked + span::before {
-    background: url('../Image/radioChecked.svg') no-repeat center / contain;
+.radio__input input[type="radio"]{
+    display: none;
 }
 
-.radio__input:hover input[type="radio"] + span::before {
-    mask-image: url('../Image/radioChecked.svg');
-    -webkit-mask-image: url('../Image/radioChecked.svg');
-    background-color: white;
+.radio__icon--checked{
+    display: none;
+}
+
+.radio__input input[type="radio"]:checked + span .radio__icon--checked {
+    display: block;
+}
+
+.radio__input input[type="radio"]:checked + span .radio__icon--unchecked {
+    display: none;
+}
+
+.radio__input:hover span .radio__icon--checked {
+    display: block;
+}
+.radio__input:hover span .radio__icon--unchecked {
+    display: none;
 }
 
 .checkboxes {
@@ -832,7 +733,6 @@ option{
     display: block;
     width: 26px;
     height: 26px;
-    background: transparent url('../Image/upload.svg') no-repeat center / contain;
 }
 
 .preview {
@@ -855,11 +755,11 @@ option{
     display: none;
     width: 26px;
     height: 26px;
-    background: transparent url('../Image/clear.svg') no-repeat center / contain;
+    background: transparent;
     border: none;
     position: absolute;
     top: -15px;
-    right: -35px;
+    right: -30px;
 }
 
 .btn__item{
@@ -874,7 +774,6 @@ option{
     font-size: 15px;
     gap: 12px;
 }
-
 
 .btn__item--save{
     color: white;
@@ -918,43 +817,37 @@ option{
 }
 
 .btn-img--save{
-    mask-image: url('../Image/radioChecked.svg');
-    -webkit-mask-image: url('../Image/radioChecked.svg');
-    background-color: white;
+    color: white;
 }
 
 .btn__item--save:hover .btn-img--save{
-    background-color: var(--primary);
-    transition: background-color 0.3s ease;
+    color: var(--primary);
+    transition: color 0.3s ease;
 }
 
 .btn-img--reset{
-    mask-image: url('../Image/reset.svg');
-    -webkit-mask-image: url('../Image/reset.svg');
-    background-color: var(--primary);
+    color: var(--primary);
 }
 
 .btn__item--reset:hover .btn-img--reset{
-    background-color: white;
-    transition: background-color 0.3s ease;
+    color: white;
+    transition: color 0.3s ease;
 }
 
 .btn-img--delete{
-    mask-image: url('../Image/delete.svg');
-    -webkit-mask-image: url('../Image/delete.svg');
-    background-color: var(--danger);
+    color: var(--danger);
 }
 
 .btn__item--delete:hover .btn-img--delete{
-    background-color: white;
-    transition: background-color 0.3s ease;
+    color: white;
+    transition: color 0.3s ease;
 }
-
 
 input[type="checkbox"]{
     width: 15px;
     height: 15px;
     accent-color: var(--primary);
+    cursor: pointer;
 }
 
 .burger{
@@ -979,8 +872,6 @@ input[type="checkbox"]{
     height: 40px;
     border-radius: 3px;
 }
-
-
 
 
 

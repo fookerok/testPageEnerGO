@@ -156,11 +156,15 @@
 }
 
 @media(max-width: 830px){
+	.mini__button--email svg, .mini__button--notification svg{
+		width: 17px;
+		height: 17px;
+	}
+	
 	.mini__button, .button__money{
 		padding: 0;
 		width: 25px;
 		height: 25px;
-		background-size: 17px;
 		border-radius: 5px;
 		gap: 0;
 	}
@@ -177,13 +181,6 @@
 	}
 	.aside{
 		border-radius: 0 20px 0 0;
-	}
-
-	.notification-dot {
-		top: 6px;
-		right: 7px;
-		width: 3px;
-		height: 3px;
 	}
 
 	.item__section{

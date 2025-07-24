@@ -15,11 +15,15 @@
 		<aside class="aside">
 			<div class="logo__block">
 				<a href="#" class="logo">
-					<img class="logo-desktop" src="Image/logo.svg" alt="лого">
-					<img class="title" src="Image/title.svg" alt="Заголовок">
+					<img class="logo-desktop" src="Image/logo/logo.svg" alt="лого">
+					<img class="title" src="Image/logo/title.svg" alt="Заголовок">
 				</a>
 				<button href="#" class="close-btn">
-					<div class="close-btn-image" aria-label="Закрыть меню"></div>
+					<div class="close-btn-image" aria-label="Закрыть меню">
+						<svg width="24" height="24">
+							<use href="Image/sprite.svg#close"/>
+						</svg>
+					</div>
 				</button>
 			</div>
 			<div class="asidemenu__list-block">
@@ -30,37 +34,61 @@
 							<ul class="asidemenu__list">
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Панель управления">
-										<div class="asidemenu__img asidemenu__img--control-panel"></div>
+										<div class="asidemenu__img">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#controlPanel"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Панель управления</p>
 									</a>
 								</li>
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Мои компании">
-										<div class="asidemenu__img asidemenu__img--my-company"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#myCompany"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Мои компании</p>
 									</a>
 								</li>
 								<li class="asidemenu__item asidemenu__item--active">
 									<a href="#" class="asidemenu__link" title="Сотрудники">
-										<div class="asidemenu__img asidemenu__img--employees"></div>
+										<div class="asidemenu__img">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#employees"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Сотрудники</p>
 									</a>
 								</li>
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Рабочие документы">
-										<div class="asidemenu__img asidemenu__img--work-documents"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#workDocuments"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Рабочие документы</p>
 									</a>
 								</li>
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Клиенты">
-										<div class="asidemenu__img asidemenu__img--clients"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#clients"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Клиенты</p>
 									</a>
 								</li>
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Шаблоны документов">
-										<div class="asidemenu__img asidemenu__img--templates"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#templates"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Шаблоны документов</p>
 									</a>
 								</li>
@@ -71,25 +99,41 @@
 							<ul class="asidemenu__list">
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Мой профиль">
-										<div class="asidemenu__img asidemenu__img--my-profile"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#myProfile"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Мой профиль</p>
 									</a>
 								</li>
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Настройки">
-										<div class="asidemenu__img asidemenu__img--settings"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#settings"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Настройки</p>
 									</a>
 								</li>
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Баланс и оплата">
-										<div class="asidemenu__img asidemenu__img--pay"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#pay"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Баланс и оплата</p>
 									</a>
 								</li>
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Проверить документ">
-										<div class="asidemenu__img asidemenu__img--check"></div>
+										<div class="asidemenu__img">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#check"/>
+											</svg>
+										</div>
 										<p class="asidemenu__name">Проверить документ</p>
 									</a>
 								</li>
@@ -102,13 +146,21 @@
 							<ul class="asidemenu__list">
 								<li class="asidemenu__item">
 									<a href="#" class="asidemenu__link" title="Документация">
-									<div class="asidemenu__img asidemenu__img--documentation"></div>
+									<div class="asidemenu__img">
+										<svg width="24px" height="24px">
+											<use href="Image/sprite.svg#documentation"/>
+										</svg>
+									</div>
 									<p class="asidemenu__name">Документация</p>
 									</a>
 								</li>
-								<li class="asidemenu__item asidemenu__item--help" title="Поддержка">
+								<li class="asidemenu__item" title="Поддержка">
 									<a href="#" class="asidemenu__link">
-									<div class="asidemenu__img asidemenu__img--support"></div>
+									<div class="asidemenu__img">
+										<svg width="24" height="24">
+											<use href="Image/sprite.svg#support"/>
+										</svg>
+									</div>
 									<p class="asidemenu__name">Поддержка</p>
 									</a>
 								</li>
@@ -141,14 +193,23 @@
 					<div class="nav__right">
 						<div class="nav__right-buttons">
 							<button class="mini__button mini__button--email">
+								<svg width="24px" height="24px">
+									<use href="Image/sprite.svg#email"/>
+								</svg>
 							</button>
 							<button class="mini__button mini__button--notification">
-								<span class="notification-dot"></span>
+									<svg width="19" height="20">
+										<use href="Image/sprite.svg#notification"/>
+									</svg>
 							</button>
 						</div>
 						<div class="nav__right-profile">
 							<div class="company">ООО «Компания»
-								<button class="button__company"></button>
+								<button class="button__company">
+									<svg width="16px" height="16px">
+										<use href="Image/sprite.svg#company"/>
+									</svg>
+								</button>
 								<div class="company__list-block" style="display: none;">
 									<ul class="company__list">
 										<li class="company__item">
@@ -165,7 +226,12 @@
 								</div>
 							</div>
 							<button class="button__money">
-								<div class="button__money-img"></div>14 020 ₽
+								<div class="button__money-img">
+									<svg width="19px" height="20px">
+										<use href="Image/sprite.svg#money"/>
+									</svg>
+								</div>
+								14 020 ₽
 							</button>
 						</div>
 					</div>
@@ -173,7 +239,11 @@
 			</header>
 			<main class="main">
 				<div class="main__title-block">
-					<button class="main__button-exit"></button>
+					<button class="main__button-exit">
+						<svg width="24px" height="24px">
+							<use href="Image/sprite.svg#arrowLeft"/>
+						</svg>
+					</button>
 					<h3 class="main__title">Добавление сотрудника</h3>
 				</div>
 				<div class="main__info">
@@ -183,24 +253,36 @@
 								<h4 class="div-title">Имя сотрудника</h4>
 								<div class="inputs">
 									<div class="input__block input__block--one">
-										<div class="input__image"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#docx"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="name">Имя</label>
-											<input class="input" type="text" id="name" placeholder=" ">
+											<input class="input" type="text" value="Василиса" id="name" placeholder=" ">
+											<label class="input__label input__label--text" for="name">Имя</label>
 										</div>
 									</div>
 									<div class="input__block input__block--one">
-										<div class="input__image"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#docx"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="patronymic">Отчество</label>
-											<input class="input" type="text" value="Константиновна" id="patronymic">
+											<input class="input" type="text" value="Константиновна" id="patronymic" placeholder=" ">
+											<label class="input__label input__label--text" for="patronymic">Отчество</label>
 										</div>
 									</div>
 									<div class="input__block input__block--one">
-										<div class="input__image"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#docx"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="surname">Фамилия</label>
-											<input class="input" type="text" value="Крыжовникова" id="surname">
+											<input class="input" type="text" value="Крыжовникова" id="surname" placeholder=" ">
+											<label class="input__label input__label--text" for="surname">Фамилия</label>
 										</div>
 									</div>
 								</div>
@@ -209,27 +291,43 @@
 								<h4 class="div-title">Компания</h4>
 								<div class="inputs">
 									<div class="input__block input__block--four">
-										<div class="input__image  input__image--company"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#myCompany"/>
+											</svg>
+										</div>
 										<div class="input__field input__field--select">
 											<label class="input__label input__label--select" for="company">Название компании</label>
 											<div class="select__field">
 												<select class="select" id="company" name="company">
-												<option value="ooo-novye-tehnologii">ООО «Новые технологии»</option>
-												<option value="ooo-novye-tehnologii">ООО «Старые технологии»</option>
+													<option value="ooo-novye-tehnologii">ООО «Новые технологии»</option>
+													<option value="ooo-novye-tehnologii">ООО «Старые технологии»</option>
 												</select>
-												<span class="select-arrow"></span>
+												<span class="select-arrow">
+													<svg width="24" height="24">
+														<use href="Image/sprite.svg#select"/>
+													</svg>
+												</span>
 											</div>
 										</div>
 									</div>
 									<div class="input__block input__block--two">
-										<div class="input__image input__image--company"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#myCompany"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="nameJob">Название должности</label>
 											<input class="input job" type="text" value="Начальник отдела" id="nameJob">
+											<label class="input__label input__label--text" for="nameJob">Название должности</label>
 										</div>
 									</div>
 									<div class="input__block input__block--two">
-										<div class="input__image input__image--company"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#myCompany"/>
+											</svg>
+										</div>
 										<div class="input__field input__field--select">
 											<label class="input__label input__label--select" for="nameDepartment">Название отдела</label>
 											<div class="select__field">
@@ -238,13 +336,19 @@
 													<option value="ooo-novye-tehnologii">Отдел юридический</option>
 													<option value="ooo-novye-tehnologii">Отдел экономический</option>
 												</select>
-												<span class="select-arrow"></span>
+												<span class="select-arrow">
+													<svg width="24" height="24">
+														<use href="Image/sprite.svg#select"/>
+													</svg>
+												</span>
 											</div>
 										</div>
 									</div>
 								</div>
 								<button class="btn-add">
-									<div class="btn-img btn-img--add"></div>
+									<svg width="24" height="24">
+										<use href="Image/sprite.svg#btn"/>
+									</svg>
 									Добавить
 								</button>
 								<div class="cards-container"></div>
@@ -253,31 +357,47 @@
 								<h4 class="div-title">Паспорт</h4>
 								<div class="inputs">
 									<div class="input__block input__block--one">
-										<div class="input__image"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#docx"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="passportSeries">Серия паспорта</label>
 											<input class="input" type="text" id="passportSeries" value="2356">
+											<label class="input__label input__label--text" for="passportSeries">Серия паспорта</label>
 										</div>
 									</div>
 									<div class="input__block input__block--three">
-										<div class="input__image"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#docx"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="passportNumber">Номер паспорта</label>
 											<input class="input" type="text" value="563985" id="passportNumber">
+											<label class="input__label input__label--text" for="passportNumber">Номер паспорта</label>
 										</div>
 									</div>
 									<div class="input__block input__block--three">
-										<div class="input__image"></div>
+										<div class="input__image">
+											<svg width="24px" height="24px">
+												<use href="Image/sprite.svg#docx"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="issuedBy">Кем выдан</label>
 											<input class="input" type="text" value="Коломенским УВД МО" id="issuedBy">
+											<label class="input__label input__label--text" for="issuedBy">Кем выдан</label>
 										</div>
 									</div>
 									<div class="input__block input__block--one">
-										<div class="input__image input__image--calendar"></div>
+										<div class="input__image">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#calendar"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="pasportDate">Когда выдан</label>
 											<input class="input input--date" id="pasportDate" type="date" value="12/11/2022">
+											<label class="input__label input__label--text" for="pasportDate">Когда выдан</label>
 										</div>
 									</div>
 								</div>
@@ -286,31 +406,47 @@
 								<h4 class="div-title">Контактные данные</h4>
 								<div class="inputs">
 									<div class="input__block input__block--four">
-										<div class="input__image input__image--adress"></div>
+										<div class="input__image input__image--adress">			
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#adress"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="adress">Адрес регистрации</label>
 											<input class="input" type="text" value="г. Москва, Инженерная улица, 18" id="adress">
+											<label class="input__label input__label--text" for="adress">Адрес регистрации</label>
 										</div>
 									</div>
 									<div class="input__block input__block--two">
-										<div class="input__image input__image--phone"></div>
+										<div class="input__image input__image--phone">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#phone"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="numberPhone">Телефон</label>
 											<input class="input" type="tel" value="+7 923 696-69-89" id="numberPhone">
+											<label class="input__label input__label--text" for="numberPhone">Телефон</label>
 										</div>
 									</div>
 									<div class="input__block input__block--two">
-										<div class="input__image input__image--email"></div>
+										<div class="input__image">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#email"/>
+											</svg>
+										</div>
 										<div class="input__field">
-											<label class="input__label" for="email">Email</label>
 											<input class="input" type="email" value="address@server.ru" id="email">
+											<label class="input__label input__label--text" for="email">Email</label>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="info__div">
-							<div class="info__img"></div>
+							<div class="info__img">											
+								<svg width="24px" height="24px">
+									<use href="Image/sprite.svg#info"/>
+								</svg>
+							</div>
 							<div class="info__text">
 								<p class="info__paragraph">Выберите тип компании: Организация, ИП или Самозанятый — и введите ваш ИНН.</p>
 								<p class="info__paragraph">Укажите ИНН вашей компании — мы автоматически подставим остальные данные (название, адрес и т.п.) из официальной базы ФНС.</p>
@@ -325,13 +461,21 @@
 								<div class="input__img">
 									<input type="file" id="imageInput1" accept="image/png" style="display: none;" />
 									<label for="imageInput1" class="upload-button upload-button1">
-										<span class="upload-img"></span>
+										<span class="upload-img">
+											<svg width="27" height="27">
+												<use href="Image/sprite.svg#upload"/>
+											</svg>
+										</span>
 										<span>Загрузить образец печати на прозрачном фоне.</span>
 										<span>Формат PNG.<br>Размер не менее 600px по ширине.<br>Не более 1 Мб.</span>
 									</label>
 									<div class="preview preview1" style="display: none;">
 										<img src="#" alt="Предварительный просмотр">
-										<button class="clear-img clear-img1"></button>
+										<button class="clear-img clear-img1">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#clear"/>
+											</svg>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -340,13 +484,21 @@
 								<div class="input__img">
 									<input type="file" id="imageInput2" accept="image/png" style="display: none;" />
 									<label for="imageInput2" class="upload-button upload-button2">
-										<span class="upload-img"></span>
+										<span class="upload-img">
+											<svg width="27" height="27">
+												<use href="Image/sprite.svg#upload"/>
+											</svg>
+										</span>
 										<span>Загрузить образец печати на прозрачном фоне.</span>
 										<span>Формат PNG.<br>Размер не менее 600px по ширине.<br>Не более 1 Мб.</span>
 									</label>
 									<div class="preview preview2" style="display: none;">
 										<img src="#" alt="Предварительный просмотр">
-										<button class="clear-img clear-img2"></button>
+										<button class="clear-img clear-img2">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#clear"/>
+											</svg>
+										</button>
 									</div>
 								</div>
 							</div>
@@ -355,19 +507,31 @@
 								<div class="input__img">
 									<input type="file" id="imageInput3" accept="image/png" style="display: none;" />
 									<label for="imageInput3" class="upload-button upload-button3">
-										<span class="upload-img"></span>
+										<span class="upload-img">
+											<svg width="27" height="27">
+												<use href="Image/sprite.svg#upload"/>
+											</svg>
+										</span>
 										<span>Загрузить образец печати на прозрачном фоне.</span>
 										<span>Формат PNG.<br>Размер не менее 600px по ширине.<br>Не более 1 Мб.</span>
 									</label>
 									<div class="preview preview3" style="display: none;">
 										<img src="#" alt="Предварительный просмотр">
-										<button class="clear-img clear-img3"></button>
+										<button class="clear-img clear-img3">
+											<svg width="24" height="24">
+												<use href="Image/sprite.svg#clear"/>
+											</svg>
+										</button>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="info__div">
-							<div class="info__img"></div>
+							<div class="info__img">											
+								<svg width="24px" height="24px">
+									<use href="Image/sprite.svg#info"/>
+								</svg>
+							</div>
 							<div class="info__text">
 								<p class="info__paragraph">Для оформления документов, загрузите образец подписи и печати компании на прозрачном фоне. Эти образцы будут добавлены в документы при их оформлении.</p>
 							</div>
@@ -375,26 +539,58 @@
 					</section>
 					<section class="item__section section__templates">
 						<div class="main__blocks main__templates">
-							<h4>Шаблоны прав</h4>
+							<h4 class="item__section-title">Шаблоны прав</h4>
 							<div class="radios">
-								<label class="radio__input" for="owner">
-									<input type="radio" name="role" value="Владелец" id="owner">
-									<span>Владелец</span>
-								</label>
-								<label class="radio__input" for="administrator">
-									<input type="radio" name="role" value="Администратор" id="administrator" checked>
-									<span>Администратор</span>
-								</label>
-								<label class="radio__input" for="manager">
-									<input type="radio" name="role" value="Менеджер" id="manager">
-									<span>Менеджер</span>
-								</label>
-								<label class="radio__input" for="guest">
-									<input type="radio" name="role" value="Гость" id="guest">
-									<span>Гость</span>
-								</label>
+							<label class="radio__input" for="owner">
+								<input type="radio" name="role" value="Владелец" id="owner">
+								<span>
+									<svg class="radio__icon radio__icon--checked" width="24" height="24">
+										<use href="Image/sprite.svg#radioChecked"></use>
+									</svg>
+									<svg class="radio__icon radio__icon--unchecked" width="24" height="24">
+										<use href="Image/sprite.svg#radioUnchecked"></use>
+									</svg>
+									Владелец
+								</span>
+							</label>
+							<label class="radio__input" for="administrator">
+								<input type="radio" name="role" id="administrator" checked>
+								<span>
+									<svg class="radio__icon radio__icon--checked" width="24" height="24">
+										<use href="Image/sprite.svg#radioChecked"></use>
+									</svg>
+									<svg class="radio__icon radio__icon--unchecked" width="24" height="24">
+										<use href="Image/sprite.svg#radioUnchecked"></use>
+									</svg>
+									Администратор
+								</span>
+							</label>
+							<label class="radio__input" for="manager">
+								<input type="radio" name="role" value="Менеджер" id="manager">
+								<span>
+									<svg class="radio__icon radio__icon--checked" width="24" height="24">
+										<use href="Image/sprite.svg#radioChecked"></use>
+									</svg>
+									<svg class="radio__icon radio__icon--unchecked" width="24" height="24">
+										<use href="Image/sprite.svg#radioUnchecked"></use>
+									</svg>
+									Менеджер
+								</span>
+							</label>
+							<label class="radio__input" for="guest">
+								<input type="radio" name="role" value="Гость" id="guest">
+								<span>
+									<svg class="radio__icon radio__icon--checked" width="24" height="24">
+										<use href="Image/sprite.svg#radioChecked"></use>
+									</svg>
+									<svg class="radio__icon radio__icon--unchecked" width="24" height="24">
+										<use href="Image/sprite.svg#radioUnchecked"></use>
+									</svg>
+									Гость
+								</span>
+							</label>
 							</div>
-							<h4>Точная настройка прав</h4>
+							<h4 class="item__section-title">Точная настройка прав</h4>
 							<div class="checkboxes">
 								<div class="checkboxes__input">
 									<input type="checkbox" value="" checked>
@@ -451,7 +647,11 @@
 							</div>
 						</div>
 						<div class="info__div">
-							<div class="info__img"></div>
+							<div class="info__img">											
+								<svg width="24px" height="24px">
+									<use href="Image/sprite.svg#info"/>
+								</svg>
+							</div>
 							<div class="info__text">
 								<p class="info__paragraph">Выберите сотрудников, которые могут заключать договоры от имени вашей организации.</p>
 							</div>
@@ -460,17 +660,29 @@
 					<section class="item__section item__section--btns">
 						<div class="btns__list-save">
 							<button class="btn__item btn__item--save">
-								<div class="btn-img btn-img--save"></div>
+								<div class="btn-img btn-img--save">
+									<svg width="24px" height="24px">
+										<use href="Image/sprite.svg#radioChecked"/>
+									</svg>
+								</div>
 								Сохранить
 							</button>
 							<button class="btn__item btn__item--reset">
-								<div class="btn-img btn-img--reset"></div>
+								<div class="btn-img btn-img--reset">
+									<svg width="24px" height="24px">
+										<use href="Image/sprite.svg#reset"/>
+									</svg>
+								</div>
 								Сбросить
 							</button>
 						</div>
 						<div class="btns__list-delete">
 							<button class="btn__item btn__item--delete">
-								<div class="btn-img btn-img--delete"></div>
+								<div class="btn-img btn-img--delete">
+									<svg width="24px" height="24px">
+										<use href="Image/sprite.svg#delete"/>
+									</svg>
+								</div>
 								Удалить сотрудника
 							</button>
 						</div>
