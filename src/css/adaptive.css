@@ -209,11 +209,19 @@
 }
 
 @media (max-width: 460px){
+	.header{
+		width: auto;
+	}
+
 	.company{
 		white-space: nowrap;
 		font-size: 0.875rem;
 	}
 
+	.menu{
+        padding: 0;
+	}
+	
 	.menu__link{
 		font-size: 0.875rem;
 		white-space: nowrap;
